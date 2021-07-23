@@ -1,0 +1,44 @@
+.theme-default {
+  --main-bg: hsl(222, 26%, 31%);
+  --keypad-bg: hsl(223, 31%, 20%);
+  --screen-bg: hsl(224, 36%, 15%);
+  --key-delres-bg: hsl(225, 21%, 49%);
+  --key-delres-shadow: hsl(224, 28%, 35%);
+  --key-equal-bg: hsl(6, 63%, 50%);
+  --key-equal-shadow: hsl(6, 70%, 34%);
+  --key-normal-bg: hsl(30, 25%, 89%);
+  --key-normal-shadow: hsl(28, 16%, 65%);
+  --text-light: hsl(0deg 0% 100%);
+  --text-dark: hsl(221, 14%, 31%);
+  --text-equal: hsl(0, 0, 100%);
+}
+
+.theme-light {
+  --main-bg: hsl(0, 0%, 90%);
+  --keypad-bg: hsl(0, 5%, 81%);
+  --screen-bg: hsl(0, 0%, 93%);
+  --key-delres-bg: hsl(185, 42%, 37%);
+  --key-delres-shadow: hsl(185, 58%, 25%);
+  --key-equal-bg: hsl(25, 98%, 40%);
+  --key-equal-shadow: hsl(25, 99%, 27%);
+  --key-normal-bg: hsl(45, 7%, 89%);
+  --key-normal-shadow: hsl(35, 11%, 61%);
+  --text-light: hsl(0deg 0% 100%);
+  --text-dark: hsl(60, 10%, 19%);
+  --text-equal: hsl(0, 0, 100%);
+}
+
+.theme-dark {
+  --main-bg: hsl(268, 75%, 9%);
+  --keypad-bg: hsl(268, 71%, 12%);
+  --screen-bg: hsl(268, 71%, 12%);
+  --key-delres-bg: hsl(281, 89%, 26%);
+  --key-delres-shadow: hsl(285, 91%, 52%);
+  --key-equal-bg: hsl(176, 100%, 44%);
+  --key-equal-shadow: hsl(177, 92%, 70%);
+  --key-normal-bg: hsl(268, 47%, 21%);
+  --key-normal-shadow: hsl(290, 70%, 36%);
+  --text-light: hsl(0deg 0% 100%);
+  --text-dark: hsl(52, 100%, 62%);
+  --text-equal: hsl(198, 20%, 13%);
+}

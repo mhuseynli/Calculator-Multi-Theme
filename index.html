@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en" class="theme-default">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">
+    <title>calc</title>
+</head>
+
+<body>
+
+    <div class="calc-main">
+        <div class="calc-header">
+            <h1 class="logo">calc</h1>
+            <div class="theme-switch">
+                <label for="switch">THEME</label>
+                <div class="theme-switch-inner">
+                    <p class="theme-number">1 2 3</p>
+                    <input id="switch" type="range" value="0" min="0" max="2" />
+                </div>
+            </div>
+        </div>
+
+        <div class="screen">
+            <input value="0" id="calc-display" type="text">
+        </div>
+
+        <div class="keypad">
+            <button value="7" class="key-normal num">7</button>
+            <button value="8" class="key-normal num">8</button>
+            <button value="9" class="key-normal num">9</button>
+            <button id="delete" class="key-delete">DEL</button>
+            <button value="4" class="key-normal num">4</button>
+            <button value="5" class="key-normal num">5</button>
+            <button value="6" class="key-normal num">6</button>
+            <button value="+" class="key-normal operation">+</button>
+            <button value="1" class="key-normal num">1</button>
+            <button value="2" class="key-normal num">2</button>
+            <button value="3" class="key-normal num">3</button>
+            <button value="-" class="key-normal operation">-</button>
+            <button value="." class="key-normal num">.</button>
+            <button value="0" class="key-normal num">0</button>
+            <button value="/" class="key-normal operation">/</button>
+            <button value="*" class="key-normal operation">x</button>
+            <button id="reset" class="key-reset">RESET</button>
+            <button id="equal" class="key-equal">=</button>
+        </div>
+    </div>
+
+    <script src="./js/theme-switcher.js"></script>
+    <script src="./js/operations.js"></script>
+</body>
+
+</html>

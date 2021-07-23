@@ -1,0 +1,199 @@
+@import url(./theme.css);
+@import url("https://fonts.googleapis.com/css2?family=Spartan:wght@700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Spartan", sans-serif;
+}
+
+button {
+  -webkit-appearance: none;
+  border: none;
+  outline: none;
+}
+
+body {
+  background-color: var(--main-bg);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+#switch {
+  width: 60px;
+  -webkit-appearance: none;
+  appearance: none;
+  background-color: var(--keypad-bg);
+  border-radius: 36px;
+  padding: 4px;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  background-color: var(--key-equal-bg);
+  height: 14px;
+  width: 14px;
+  border-radius: 14px;
+  cursor: pointer;
+}
+
+input[type="range"]::-moz-range-thumb {
+  -webkit-appearance: none;
+  background-color: var(--key-equal-bg);
+  height: 14px;
+  width: 14px;
+  border-radius: 14px;
+  cursor: pointer;
+}
+
+input[type="range"]::-ms-thumb {
+  -webkit-appearance: none;
+  background-color: var(--key-equal-bg);
+  height: 14px;
+  width: 14px;
+  border-radius: 14px;
+  cursor: pointer;
+}
+
+.calc-header {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  margin-bottom: 2rem;
+}
+
+.logo {
+  color: var(--text-dark);
+}
+
+.theme-switch {
+  display: flex;
+  align-items: center;
+  color: var(--text-dark);
+}
+
+.theme-switch label {
+  font-size: 0.8rem;
+  letter-spacing: 1px;
+}
+
+.theme-switch-inner {
+  position: relative;
+  margin-left: 10px;
+}
+
+.theme-number {
+  position: absolute;
+  position: absolute;
+  bottom: 29px;
+  left: 2px;
+  font-size: 11px;
+  word-spacing: 15px;
+}
+
+.screen {
+  margin-bottom: 1.8rem;
+}
+
+#calc-display {
+  -webkit-appearance: none;
+  border: none;
+  outline: none;
+  font-size: 2.2rem;
+  padding: 1em;
+  border-radius: 10px;
+  background-color: var(--screen-bg);
+  color: var(--text-dark);
+  text-align: right;
+  width: 100%;
+  pointer-events: none;
+}
+
+#calc-display:focus {
+  border: none;
+  outline: none;
+}
+
+.theme-default .theme-switch,
+.theme-default .logo,
+.theme-default #calc-display {
+  color: var(--text-light);
+}
+
+.keypad {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  background-color: var(--keypad-bg);
+  border-radius: 10px;
+  padding: 1rem;
+}
+
+.keypad button {
+  padding: 1rem;
+  border-radius: 7px;
+  margin: 0.8rem;
+  transition: 0.3s;
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.keypad button:active {
+  box-shadow: none;
+}
+
+.key-normal {
+  background-color: var(--key-normal-bg);
+  box-shadow: inset 0px -5px 0px 0px var(--key-normal-shadow);
+  color: var(--text-dark);
+}
+
+.key-normal,
+.key-equal {
+  font-size: 2rem;
+}
+
+.key-delete,
+.key-reset {
+  background-color: var(--key-delres-bg);
+  color: var(--text-light);
+  box-shadow: inset 0px -5px 0px 0px var(--key-delres-shadow);
+  font-size: 1.3rem;
+}
+
+.key-equal {
+  background-color: var(--key-equal-bg);
+  color: var(--text-light);
+  box-shadow: inset 0px -5px 0px 0px var(--key-equal-shadow);
+}
+
+.key-reset,
+.key-equal {
+  grid-column: span 2;
+}
+
+@media (max-width: 560px) {
+  #calc-display {
+    padding: 0.8em 1em;
+  }
+  .calc-main {
+    width: 90vw;
+  }
+  .keypad {
+    padding: 1rem;
+  }
+  .keypad button {
+    margin: 7px;
+  }
+  .key-normal,
+  .key-equal {
+    font-size: 1.7rem;
+  }
+  .key-delete,
+  .key-reset {
+    font-size: 1rem;
+    padding: 0 !important;
+  }
+}

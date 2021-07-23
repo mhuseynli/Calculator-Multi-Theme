@@ -35,8 +35,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://github.com/mhuseynli/Calculator-Multi-Theme)
-- Live Site URL: [Add live site URL here](https://calculator-multi-theme.vercel.app/)
+- Solution URL: [https://github.com/mhuseynli/Calculator-Multi-Theme](https://github.com/mhuseynli/Calculator-Multi-Theme)
+- Live Site URL: [https://calculator-multi-theme.vercel.app/](https://calculator-multi-theme.vercel.app/)
 
 
 ## Author

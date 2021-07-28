@@ -12,7 +12,7 @@ if (localStorage.getItem("themeChanged") == false) {
   }
 }
 
-themeSwitcher.addEventListener("change", (e) => {
+themeSwitcher.addEventListener("input", (e) => {
   localStorage.setItem("themeChanged", true)
   toggleTheme()
 })
